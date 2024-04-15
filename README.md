@@ -126,6 +126,15 @@ Flowise has 3 different modules in a single mono repository.
 
     Any code changes will reload the app automatically on [http://localhost:8080](http://localhost:8080)
 
+## Modify the UI
+1. Color Changes
+   - open file at location ```packages\ui\src\assets\scss\_themes-vars.module.scss``` and change the color code (HEX) of the variables based on the color that wants to be changed.
+   - To know which color hex code to change, open the website and use inspect element mode to hover at the element you want to change the color. The color code will be shown in the CSS section of the inspect element tab.
+   ![image](./images/Guide.png)
+2. Logo Changes
+   - open file at location ```packages\ui\src\ui-component\extended\Logo.jsx``` and change the logo image path based on the new logo image path.
+   - Alternatively, using the same filename and path in ```Logo.jsx``` file, replace the logo image at the path with the new logo image without changing the code.
+
 ## 🔒 Authentication
 
 To enable app level authentication, add `FLOWISE_USERNAME` and `FLOWISE_PASSWORD` to the `.env` file in `packages/server`:
